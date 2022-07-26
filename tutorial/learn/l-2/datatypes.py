@@ -1,4 +1,3 @@
-
 """
 Multi line comment
 
@@ -28,9 +27,12 @@ dist
 bool
 
 
+
+*** empty values acts like False ( i.g: '', {}, [], 0), rest acts like True
+
 """
 
-name = "ravinder" # string
+name = "ravinder"  # string
 age = 26
 exp = 4.2
 
@@ -38,7 +40,7 @@ exp = 4.2
 print(name, age, exp)
 
 
-print('+++++++++++++++++++++++++++++++++++++++++++++++++')
+print("+++++++++++++++++++++++++++++++++++++++++++++++++")
 
 print("name:", name, "age:", age, "exp:", exp)
 
@@ -46,7 +48,7 @@ print("type of name", type(name))
 
 
 print("-----------------")
-isHeWorking = True  
+isHeWorking = True
 
 """
 
@@ -61,7 +63,11 @@ print(isHeWorking, isHeManager)
 
 print()
 
-firstJob, secondJob, thirdJob = "uttara",'Durvah', "BUHL" # declaring multiple variables ( not imp )
+firstJob, secondJob, thirdJob = (
+    "uttara",
+    "Durvah",
+    "BUHL",
+)  # declaring multiple variables ( not imp )
 
 print("firstJob ", firstJob, ",secondJob ", secondJob, ",thirdJob", thirdJob)
 
@@ -70,23 +76,22 @@ print()
 print("============= list ============")
 # -------------------------
 
-fruits = ["apple", "banana", "cherry", "cherry"] # list
-  # index:   0      ,   1,     2,          3
+fruits = ["apple", "banana", "cherry", "cherry"]  # list
+# index:   0      ,   1,     2,          3
 
-#display x:
+# display x:
 print(fruits)
 
-#display the data type of x:
-print("fruits type: ",type(fruits)) 
+# display the data type of x:
+print("fruits type: ", type(fruits))
 
 print(" index 1 elem:-", fruits[1])
 
 print("length or fruits: ", len(fruits))
 
 
-lastIndex = len(fruits)-1
-print(" last element index:", lastIndex, " value:", fruits[lastIndex] )
-
+lastIndex = len(fruits) - 1
+print(" last element index:", lastIndex, " value:", fruits[lastIndex])
 
 
 print()
@@ -96,22 +101,24 @@ print("-------------------------------dict")
 
 
 car = {
-  "name": "Ford",
-  "model": "Mustang",
-  "year": 1964,
-  "colors": ["blue", "red"],
-  "address": {
-    "city": "blr",
-    "area":"begur",
-    "state": "ka"
-  }
+    "name": "Ford",
+    "model": "Mustang",
+    "year": 1964,
+    "colors": ["blue", "red"],
+    "address": {"city": "blr", "area": "begur", "state": "ka"},
 }
 
 print("car", car)
 
 print("type of car", type(car))
 
-print("car name",car['name']) # to access speific property
+print("car name", car["name"])  # to access speific property
 
 print("len ", len(car))
 
+
+print("=====================")
+car["name"] = "Indian Ford"  # chaging field name
+car["height"] = 150  # chaging field name if not exist add
+
+print("car", car)

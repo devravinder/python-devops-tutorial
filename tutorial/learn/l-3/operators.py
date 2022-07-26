@@ -17,77 +17,65 @@ Membership: in
 
 
 """
-print('----------------------')
+print("----------------------")
 x = 3
 y = 2
 z = x + y
 print(z)
 
-z = x-y
+z = x - y
 print(z)
 
-z = x*y
+z = x * y
 print(z)
 
 
-
-z = x/y  # this is standard
+z = x / y  # this is standard
 print(z, " float division type ", type(z))
 
 
-
-z = x//y # 1.5 -> 1
+z = x // y  # 1.5 -> 1
 print(z, " normal  division ( // ) type ", type(z))
 
 
-print('---------------------------------')
+print("---------------------------------")
 
 balance = 200
 
 withdraw = 150
 
-isAllowed = balance > withdraw # result is boolean
+isAllowed = balance > withdraw  # result is boolean
 
-print('isAllowed', isAllowed)
+print("isAllowed", isAllowed)
 
-isSame = balance == withdraw # result is boolean
+isSame = balance == withdraw  # result is boolean
 
-print('isSame', isSame)
+print("isSame", isSame)
 
 
-isNotSame = balance != withdraw # result is boolean ( not imp )
+isNotSame = balance != withdraw  # result is boolean ( not imp )
 
-print('isNotSame', isNotSame)
-
+print("isNotSame", isNotSame)
 
 
 car1 = {
-  "name": "Ford",
-  "model": "Mustang",
-  "year": 1964,
-  "colors": ["blue", "red"],
-  "address": {
-    "city": "blr",
-    "area":"begur",
-    "state": "ka"
-  }
+    "name": "Ford",
+    "model": "Mustang",
+    "year": 1964,
+    "colors": ["blue", "red"],
+    "address": {"city": "blr", "area": "begur", "state": "ka"},
 }
 
 car2 = {
-  "name": "Ford",
-  "model": "Mustang",
-  "year": 1964,
-  "address": {
-    "city": "blr",
-    "area":"begur",
-    "state": "ka"
-  }
+    "name": "Ford",
+    "model": "Mustang",
+    "year": 1964,
+    "address": {"city": "blr", "area": "begur", "state": "ka"},
 }
 
 print()
 print("-----------in operator")
-print('colors' in car1)
-res2 = 'colors' in car2 ## genral usage
-print('colors' in car2)
-print("res2: ", res2)
-
+print("colors" in car1)
+result2 = "colors" in car2  ## general usage # holding result in a variable
+print("colors" in car2)
+print("res2: ", result2)

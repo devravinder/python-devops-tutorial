@@ -6,7 +6,7 @@ What devops need
 2) control statements
 3) funstions / methods
 4) string, date
-5) file handling ( file creation, redaing, deleted, edit )
+5) file handling ( file creation, redaing, deleted, edit ) [ json, txt]
 6) using libraries/modules ( external, internal ) [ as project ]
 7) network calls ( rest api, ssh) [ basic level]
 8) running shell commands from pyton gram
